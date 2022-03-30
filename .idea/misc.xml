@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_add_machanic.xml" value="0.25" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_delete_macdetails.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_view_booking.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_view_mac_details.xml" value="0.264" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_delete__booking.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_feedback.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

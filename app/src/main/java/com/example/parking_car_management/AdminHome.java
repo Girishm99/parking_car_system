@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class AdminHome extends AppCompatActivity implements View.OnClickListener {
 
 
-    private Button adminview,admindelete,adminfeedback;
+    private Button adminview,admindelete,adminfeedback,adminhomemacdetails;
     private Button signout;
 
     @Override
@@ -26,11 +26,13 @@ public class AdminHome extends AppCompatActivity implements View.OnClickListener
         adminview=findViewById(R.id.btn_adminhomeview);
         admindelete=findViewById(R.id.btn_adminhomedelete);
         adminfeedback=findViewById(R.id.btn_adminhomefeedback);
+        adminhomemacdetails=findViewById(R.id.btn_adminhomemacdetails);
         signout=findViewById(R.id.btn_adminhomesignout);
 
         adminview.setOnClickListener(this);
         admindelete.setOnClickListener(this);
         adminfeedback.setOnClickListener(this);
+        adminhomemacdetails.setOnClickListener(this);
         signout.setOnClickListener(this);
 
 
@@ -47,6 +49,9 @@ public class AdminHome extends AppCompatActivity implements View.OnClickListener
         }
         if (view==adminfeedback){
             startActivity(new Intent(this,AdminFeedback.class));
+        }
+        if (view==adminhomemacdetails){
+            startActivity(new Intent(this,AdminViewMacDetails.class));
         }
         if (view==signout){
             finish();

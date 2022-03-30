@@ -43,22 +43,36 @@
             android:id="@+id/btn_adminhomefeedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/btn_adminhomedelete"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:text="Feedback"
             android:background="@drawable/btn_bg"
             android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:text="Feedback"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_adminhomemacdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_adminhomefeedback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="15dp"
+            android:text="VIEW MACHANIC DETAILS"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_adminhomesignout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/btn_adminhomefeedback"
+            android:layout_below="@+id/btn_adminhomemacdetails"
             android:layout_marginTop="50dp"
             android:textColor="@color/white"
             android:textSize="25dp"

@@ -43,10 +43,10 @@ public class Delete_Booking extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onClick(View view) {
                 Integer delete= mydb.deletedata(et_id.getText().toString());
-                if (delete > 0)
-                    Toast.makeText(Delete_Booking.this,"Booking cancelled ",Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(Delete_Booking.this,"Failed to cancel Booking",Toast.LENGTH_SHORT).show();
+                if (delete > 0){
+                    Toast.makeText(Delete_Booking.this,"Booking cancelled ",Toast.LENGTH_SHORT).show();}
+                else{
+                    Toast.makeText(Delete_Booking.this,"Failed to cancel Booking",Toast.LENGTH_SHORT).show();}
             }
 
         });

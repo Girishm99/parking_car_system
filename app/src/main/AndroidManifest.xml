@@ -12,7 +12,16 @@
         android:roundIcon="@drawable/car_parking"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewSlot"></activity>
+        <activity
+            android:name=".AdminDeleteMacdetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewMacDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddMachanic"
+            android:exported="false" />
+        <activity android:name=".ViewSlot" />
         <activity android:name=".RentSlot" />
         <activity android:name=".AdminFeedback" />
         <activity android:name=".AdminDelete" />

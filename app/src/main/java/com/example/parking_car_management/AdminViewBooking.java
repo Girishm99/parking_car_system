@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class AdminViewBooking extends AppCompatActivity {
 
     DataHelper mydb;
     private TextView result;
+    Button add,delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +31,10 @@ public class AdminViewBooking extends AppCompatActivity {
 
         StringBuffer buffer =new StringBuffer();
         while (res.moveToNext()) {
-            buffer.append("Id :"+res.getString(0)+"\n");
+            buffer.append("Booking Id :"+res.getString(0)+"\n");
             buffer.append("Name :"+res.getString(1)+"\n");
             buffer.append("Email: :"+res.getString(2)+"\n");
-            buffer.append("Car Number:"+res.getString(3)+"\n");
+            buffer.append("Car Number:"+res.getString(3)+"\n\n\n");
         }
         result.setText(buffer);
 

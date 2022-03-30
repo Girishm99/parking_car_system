@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Delete_Booking">
+    tools:context=".AdminDeleteMacdetails">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancel Booking"
+                android:text="Delete Machanic Details"
                 android:textColor="@color/colorAccent"
                 android:textSize="25dp" />
 
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Application No. :"
+                android:text="Machanic ID :"
                 android:textColor="@color/colorAccent"
                 android:textSize="20dp" />
 
@@ -53,6 +53,7 @@
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,18 +64,26 @@
                 android:id="@+id/btn_deleteDATA"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Cancel" />
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/white"
+                android:text="Delete"
+
+                android:textColor="@color/colorAccent" />
 
             <Button
-                android:id="@+id/btn_deletereset"
+                android:id="@+id/btn_reset"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Reset" />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/white"
+                android:text="Reset"
+                android:textColor="@color/colorAccent" />
 
         </LinearLayout>
-
     </RelativeLayout>
 
 </RelativeLayout>

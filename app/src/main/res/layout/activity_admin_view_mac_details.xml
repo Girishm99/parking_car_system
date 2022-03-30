@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AdminViewBooking">
+
+    <LinearLayout
+        android:id="@+id/lin_viewtitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MACHANIC DETAILS"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lin_viewtitle"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+        <TextView
+            android:id="@+id/tv_macdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:inputType="none"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="547dp"
+        android:layout_marginBottom="21dp">
+
+        <Button
+            android:id="@+id/btn_addDetails"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/white"
+            android:text="Add Details"
+
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_deleteMacDetails"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/white"
+            android:text="Delete Details"
+
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

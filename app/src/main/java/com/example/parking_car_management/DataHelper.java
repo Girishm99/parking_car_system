@@ -19,6 +19,13 @@ public class DataHelper extends SQLiteOpenHelper {
     public static final String COL_EMAIL ="EMAIL";
     public static final String COL_Car_Number ="Car_number";
 
+    public static final String TABLE_MACDETAILS = "machanicdetails";
+    public static final String ID ="ID";
+    public static final String name ="NAME";
+    public static final String pincode ="pincode";
+    public static final String address ="address";
+    public static final String phoneno ="phoneno";
+
 
     public static final String TABLE_FEEDBACK="admin";
     public static final String COL_FEEDBACK ="Feedback";
@@ -32,13 +39,14 @@ public class DataHelper extends SQLiteOpenHelper {
 
 
     public DataHelper(@Nullable Context context) {
-        super(context,DATABASE_NAME, null, 1);
+        super(context,DATABASE_NAME, null, 3);
     }
 
 
     public static final String userdetails="create table "+TABLE_NAME+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,EMAIL TEXT,Car_number INTEGER)";
     public static final String adminfeedback="create table "+TABLE_FEEDBACK+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,Feedback TEXT)";
     public static final String slotdetails="create table "+TABLE_SLOTDETAILS+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,SLOTID INTEGER,ADDRESS TEXT)";
+    public static final String Macdetails="create table  "+ TABLE_MACDETAILS +"(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,pincode INTEGER,address TEXT,phoneno TEXT)";
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -46,6 +54,7 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL(userdetails);
         db.execSQL(adminfeedback);
         db.execSQL(slotdetails);
+        db.execSQL(Macdetails);
 
     }
 
@@ -55,6 +64,7 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_FEEDBACK);
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_SLOTDETAILS);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_MACDETAILS);
         onCreate(db);
 
     }
@@ -82,6 +92,32 @@ public class DataHelper extends SQLiteOpenHelper {
             return true;
     }
 
+
+    public Cursor getAllMacDetails(){
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor res =db.rawQuery("select * from "+TABLE_MACDETAILS,null);
+        return res;
+    }
+
+    public boolean insertmacdetails(String Name,String mobileNumber,String Pincode, String Address){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        values.put(name,Name);
+        values.put(phoneno,mobileNumber);
+        values.put(pincode,Pincode);
+        values.put(address,Address);
+        long result= db.insert(TABLE_MACDETAILS,null,values);
+        if (result == -1)
+            return false;
+        else
+            return true;
+    }
+
+
+    public Integer deleteMacData(String id) {
+        SQLiteDatabase db=this.getWritableDatabase();
+        return db.delete(TABLE_MACDETAILS,"ID = ?",new String[] {id});
+    }
     public boolean insertslot(String name,String address,String slotid){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values=new ContentValues();
