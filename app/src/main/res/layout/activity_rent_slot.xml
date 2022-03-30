@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RentSlot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="NAME: "/>
+
+                <EditText
+                    android:id="@+id/et_rentname"
+                    android:layout_width="292dp"
+                    android:inputType="textPersonName"
+                    android:layout_marginStart="40dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="ADDRESS: "/>
+
+                <EditText
+                    android:id="@+id/et_rentaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:inputType="textLongMessage"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="SLOT ID: "/>
+
+                <EditText
+                    android:id="@+id/et_rentslotid"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:text="Rent"
+                    android:background="@color/colorAccent"
+                    android:layout_marginStart="50dp"/>
+
+                <Button
+                    android:id="@+id/btn_rentreset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:text="Reset"
+                    android:background="@color/colorAccent"
+                    android:layout_marginStart="50dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

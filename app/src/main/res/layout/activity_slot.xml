@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlotActivity">
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/bookingEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="114dp"
+            android:text="Email"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_bookingEmail"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_bookingEmail"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="114dp"
+            android:text="Car Number"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_carnumber"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_bookingEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textVisiblePassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_carnumber"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="114dp"
+            android:text="Time"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_timer"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_carnumber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_timer"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="114dp"
+            android:text="Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_timer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textPersonName" />
+
+
+        <TextView
+            android:id="@+id/datepicker"
+            android:layout_centerHorizontal="true"
+           android:paddingStart="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:text="Select a date"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datepicker"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Reset"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/road"
+        android:layout_width="350dp"
+        android:layout_height="529dp"
+        android:background="@drawable/road2"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_slot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_toStartOf="@+id/btn_slot2"
+            android:text="SLOT 1" />
+
+        <Button
+            android:id="@+id/btn_slot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="53dp"
+            android:text="SLOT 2" />
+
+        <Button
+            android:id="@+id/btn_slot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_slot1"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="75dp"
+            android:layout_toStartOf="@+id/btn_slot4"
+            android:text="Slot 3" />
+
+        <Button
+            android:id="@+id/btn_slot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_slot2"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="53dp"
+            android:text="SLOT 4" />
+
+        <Button
+            android:id="@+id/btn_slot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_slot3"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="75dp"
+            android:layout_toStartOf="@+id/btn_slot6"
+            android:text="Slot 5" />
+
+        <Button
+            android:id="@+id/btn_slot6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_slot4"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="53dp"
+            android:text="SLOT 6" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

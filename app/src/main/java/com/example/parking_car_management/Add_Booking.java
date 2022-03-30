@@ -1,0 +1,98 @@
+package com.example.parking_car_management;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Patterns;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+
+public class Add_Booking extends AppCompatActivity implements View.OnClickListener{
+
+    private Button area1,area2,area3,area4;
+    private Button area5,area6,area7,area8;
+    private Button area9,area10;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add__booking);
+
+        area1=findViewById(R.id.btn_area1);
+        area2=findViewById(R.id.btn_area2);
+        area3=findViewById(R.id.btn_area3);
+        area4=findViewById(R.id.btn_area4);
+        area5=findViewById(R.id.btn_area5);
+        area6=findViewById(R.id.btn_area6);
+        area7=findViewById(R.id.btn_area7);
+        area8=findViewById(R.id.btn_area8);
+        area9=findViewById(R.id.btn_area9);
+        area10=findViewById(R.id.btn_area10);
+
+        area1.setOnClickListener(this);
+        area2.setOnClickListener(this);
+        area3.setOnClickListener(this);
+        area4.setOnClickListener(this);
+        area5.setOnClickListener(this);
+        area6.setOnClickListener(this);
+        area7.setOnClickListener(this);
+        area8.setOnClickListener(this);
+        area9.setOnClickListener(this);
+        area10.setOnClickListener(this);
+
+
+    }
+
+
+    @Override
+    public void onClick(View view) {
+
+        if (view==area1){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area2){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area3){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area4){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area5){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area6){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area7){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area8){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area9){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+
+        if (view==area10){
+            startActivity(new Intent(this,SlotActivity.class));
+        }
+    }
+}
+

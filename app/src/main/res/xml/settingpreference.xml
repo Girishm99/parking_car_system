@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="@string/sync_pref"
+        android:summary="@string/sync_pref_summary"
+        android:defaultValue="true"/>
+
+    <ListPreference
+        android:dependency="pref_sync"
+        android:key="pref_syncConnectionType"
+        android:title="@string/pref_syncConnectionType"
+        android:entries="@array/pref_syncConnectionType_entries"
+        android:entryValues="@array/pref_syncConnectionType_entriesvalues"
+        android:defaultValue="@string/pref_syncConnectionType_default_value"
+        android:summary="@string/pref_syncConnectionType_summary"/>
+
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="USER">
+
+        <EditTextPreference
+            android:dialogTitle="Your name"
+            android:dialogMessage="Enter your full name"
+            android:inputType="textCapWords"
+            android:key="key_full_name"
+            android:title="Name"
+            android:summary="Quoc Nguyen">
+
+        </EditTextPreference>
+
+
+        <EditTextPreference
+            android:dialogTitle="Your email"
+            android:dialogMessage="Enter your email address"
+            android:inputType="textEmailAddress"
+            android:key="key_email"
+            android:title="Email"
+            android:summary="kisanveerasamy@gmail.com">
+
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Player">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_timer"
+            android:title="Enable sleep timer"
+            android:summary="Enable or disable sleep timer"/>
+
+        <ListPreference
+            android:dependency="enable_timer"
+            android:key="key_sleep_timer"
+            android:title="Sleep timer"
+            android:defaultValue="After 5 seconds"
+            android:summary="Stop playing music after some time"
+            android:entries="@array/timerList"
+            android:entryValues="@array/timerListValues"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="OTHER">
+
+        <SwitchPreference
+            android:key="enable_notification"
+            android:editable="true"
+            android:title="Push notification"/>
+
+        <RingtonePreference
+            android:key="key_notification_ringtone"
+            android:title="Notification ringtone"
+            android:summary="Choose notification sound"
+            android:ringtoneType="notification"
+            android:dependency="enable_notification"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
