@@ -119,6 +119,21 @@
             android:text="view Slot"
             android:textColor="@color/white"
             android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_viewmachanic"
+            android:layout_width="205dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_slotview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="93dp"
+            android:background="@color/colorAccent"
+            android:text="View Machanic Details"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
     </RelativeLayout>
 
 

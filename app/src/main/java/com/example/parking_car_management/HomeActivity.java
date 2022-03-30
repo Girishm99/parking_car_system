@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout drawer;
 
-    private Button addbook,viewbook,deletebook,feedback;
+    private Button addbook,viewbook,deletebook,feedback,viewmachanic;
     private Button rent,viewslot;
 
     @Override
@@ -51,18 +51,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         deletebook=findViewById(R.id.btn_deletebooking);
         feedback=findViewById(R.id.btn_feedback);
         rent=findViewById(R.id.btn_slotrent);
+        viewmachanic=findViewById(R.id.btn_viewmachanic);
         viewslot=findViewById(R.id.btn_slotview);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -81,6 +75,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         viewbook.setOnClickListener(this);
         deletebook.setOnClickListener(this);
         feedback.setOnClickListener(this);
+        viewmachanic.setOnClickListener(this);
         rent.setOnClickListener(this);
         viewslot.setOnClickListener(this);
     }
@@ -174,6 +169,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         if (view==feedback){
             startActivity(new Intent(this,Feedback.class));
+        }
+
+        if (view==viewmachanic){
+            startActivity(new Intent(this,viewMachanicDetails.class));
         }
 
         if (view==rent){

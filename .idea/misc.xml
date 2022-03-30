@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_add__booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_add_machanic.xml" value="0.25" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_delete_macdetails.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_home.xml" value="0.25416666666666665" />
@@ -12,6 +13,17 @@
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_feedback.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_view__booking.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_view_machanic_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/app_bar_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/content_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_send.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_share.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_tools.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/nav_header_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/menu/activity_home_drawer.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
