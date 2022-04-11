@@ -18,6 +18,7 @@ public class DataHelper extends SQLiteOpenHelper {
     public static final String COL_NAME ="NAME";
     public static final String COL_EMAIL ="EMAIL";
     public static final String COL_Car_Number ="Car_number";
+    public static final String COL_ADDRESS ="address";
 
     public static final String TABLE_MACDETAILS = "machanicdetails";
     public static final String ID ="ID";
@@ -25,6 +26,12 @@ public class DataHelper extends SQLiteOpenHelper {
     public static final String pincode ="pincode";
     public static final String address ="address";
     public static final String phoneno ="phoneno";
+
+    public static final String TABLE_OWNERDETAILS = "ownerdetails";
+    public static final String ownerID ="ID";
+    public static final String ownername ="NAME";
+    public static final String owneraddress ="address";
+    public static final String ownerphoneno ="phoneno";
 
 
     public static final String TABLE_FEEDBACK="admin";
@@ -35,18 +42,20 @@ public class DataHelper extends SQLiteOpenHelper {
     public static final String COL_SLOTID ="SlotID";
     public static final String COL_SLOATNAME ="NAME";
     public static final String COL_SLOTADDRESS ="ADDRESS";
-    public static final String COL_NORMALID ="ID";
 
 
     public DataHelper(@Nullable Context context) {
-        super(context,DATABASE_NAME, null, 3);
+        super(context,DATABASE_NAME, null, 5);
     }
 
 
-    public static final String userdetails="create table "+TABLE_NAME+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,EMAIL TEXT,Car_number INTEGER)";
+    public static final String userdetails="create table "+TABLE_NAME+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,EMAIL TEXT,Car_number INTEGER,address TEXT)";
     public static final String adminfeedback="create table "+TABLE_FEEDBACK+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,Feedback TEXT)";
     public static final String slotdetails="create table "+TABLE_SLOTDETAILS+ "(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,SLOTID INTEGER,ADDRESS TEXT)";
     public static final String Macdetails="create table  "+ TABLE_MACDETAILS +"(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,pincode INTEGER,address TEXT,phoneno TEXT)";
+    public static final String ownerdetails="create table  "+ TABLE_OWNERDETAILS +"(Id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,pincode INTEGER,address TEXT,phoneno TEXT)";
+
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -55,6 +64,7 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL(adminfeedback);
         db.execSQL(slotdetails);
         db.execSQL(Macdetails);
+        db.execSQL(ownerdetails);
 
     }
 
@@ -69,10 +79,11 @@ public class DataHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertdata(String name,String email,String carnumber){
+    public boolean insertdata(String name,String email,String address,String carnumber){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values=new ContentValues();
         values.put(COL_NAME,name);
+        values.put(COL_ADDRESS,address);
         values.put(COL_EMAIL,email);
         values.put(COL_Car_Number,carnumber);
         long result= db.insert(TABLE_NAME,null,values);
@@ -81,6 +92,24 @@ public class DataHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
+
+    public boolean insertIntoSlotDetails(String name,String email,String address,String carnumber){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        values.put(COL_SLOATNAME,name);
+        values.put(COL_EMAIL,email);
+        values.put(COL_SLOTADDRESS,address);
+        values.put(COL_Car_Number,carnumber);
+        long result= db.insert(TABLE_NAME,null,values);
+        if (result == -1)
+            return false;
+        else
+            return true;
+    }
+
+
+
     public boolean insertfeedback(String feedback){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values=new ContentValues();

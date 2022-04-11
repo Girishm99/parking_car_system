@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".MainActivity">
 
 <ImageView
@@ -19,10 +19,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parking"
         android:layout_below="@+id/splash"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:textColor="#ffffff"/>
+        android:text="Car Go"
+        android:textColor="#050505"
+        android:textSize="25dp" />
 
 </RelativeLayout>

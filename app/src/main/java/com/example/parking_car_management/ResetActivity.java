@@ -33,9 +33,7 @@ public class ResetActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset);
 
-        back=findViewById(R.id.tv_back);
 
-        back.setOnClickListener(this);
 
 
 
@@ -48,12 +46,6 @@ public class ResetActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-
-        if (view==back){
-            startActivity(new Intent(ResetActivity.this,LoginActivity.class));
-            finish();
-        }
-
         if (view==resetPassword){
             FirebaseAuth auth = FirebaseAuth.getInstance();
             auth.sendPasswordResetEmail(passwordEmail.getText().toString())

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".AdminDeleteMacdetails">
 
     <RelativeLayout
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Delete Machanic Details"
-                android:textColor="@color/colorAccent"
+                android:textColor="#222831"
                 android:textSize="25dp" />
 
         </LinearLayout>
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Machanic ID :"
-                android:textColor="@color/colorAccent"
+                android:textColor="#222831"
                 android:textSize="20dp" />
 
             <EditText
@@ -67,21 +67,20 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#222831"
                 android:text="Delete"
-
-                android:textColor="@color/colorAccent" />
+                android:textColor="#EFF7E1" />
 
             <Button
                 android:id="@+id/btn_reset"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#222831"
                 android:text="Reset"
-                android:textColor="@color/colorAccent" />
+                android:textColor="#EFF7E1" />
 
         </LinearLayout>
     </RelativeLayout>

@@ -21,11 +21,12 @@ public class About extends AppCompatActivity {
 
         about.setMovementMethod(new ScrollingMovementMethod());
 
-        about.setText("Car parking System provides the records of the incoming and outgoing vehicles in a parking place. \n" +
+        about.setText("Car Go System provides the records of the incoming and outgoing vehicles in a parking place. \n" +
                 "\n" +
-                "Nowadays in frequently visited places such as malls, multiplex system, hospitals, offices, market areas there is an avid problem of car parking .The user has to search for the plot round and round in the city. It helps in safe parking thereby relieving from the tension of vehicle towing\n" +
+                "Nowadays in frequently visited places such as malls, multiplex system, hospitals, offices, market areas there is an avid problem of car parking ." +
+                "The user has to search for the plot round and round in the city. It helps in safe parking thereby relieving from the tension of vehicle towing\n" +
                 "\n" +
-                "The focus on this project is to generate Car Parking system that enables the time management. The system will consist data about the list of cars, parking slots and checks whether the slots are full or not.User can send feedback to admin.\n"+
+                "The focus on this project is to generate Car Go system that enables the time management. The system will consist data about the list of cars, parking slots and checks whether the slots are full or not.User can send feedback to admin.\n"+
                 "\n" +
                 "Admin can view all the user in the admin panel.Admin have the rights to delete user.Admin can also view feedback sent from user.And admin can also delete feedback.\n"+
                 "\n" +

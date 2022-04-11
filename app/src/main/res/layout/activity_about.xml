@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".About">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="93dp"
         android:text="About"
-        android:textColor="@color/colorAccent"
+        android:textColor="#222831"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#222831"
         android:scrollbars="vertical"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"

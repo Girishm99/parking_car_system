@@ -78,6 +78,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     sendEmailVerification();
+                    finish();
+                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 } else {
                     Toast.makeText(RegisterActivity.this, "Could not register. please try again", Toast.LENGTH_LONG).show();
                 }
@@ -106,7 +108,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 public void onComplete(@NonNull Task<Void> task) {
 
                     if (task.isSuccessful()) {
-                        Toast.makeText(RegisterActivity.this, "Successfully Registered. Verification mail sent to your email", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Successfully Registered.\nVerification mail sent to your email", Toast.LENGTH_SHORT).show();
                         firebaseAuth.signOut();
                         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                     } else {

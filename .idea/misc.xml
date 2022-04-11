@@ -3,20 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Parking_car_Management/app/src/main/res/drawable/btn_bg.xml" value="0.2703125" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/drawable/et_bg.xml" value="0.2703125" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_add__booking.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_add_machanic.xml" value="0.25" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_delete.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_delete_macdetails.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_feedback.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_view_booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_admin_view_mac_details.xml" value="0.264" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_delete__booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_feedback.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_rent_slot.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_reset.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_setting.xml" value="0.192481884057971" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_slot.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_view__booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_view_machanic_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/activity_view_slot.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/app_bar_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/content_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_send.xml" value="0.25416666666666665" />
         <entry key="..\:/Parking_car_Management/app/src/main/res/layout/fragment_share.xml" value="0.25416666666666665" />
@@ -32,5 +46,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25416666666666665" />
+      </ProjectState>
+    </option>
   </component>
 </project>

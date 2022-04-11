@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".AdminActivity">
 
     <RelativeLayout
@@ -39,7 +39,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Login"
-                android:textColor="#ffffff"
+                android:textColor="#151D3B"
                 android:textSize="30dp" />
 
             <LinearLayout
@@ -62,7 +62,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="Username"
                         android:textAllCaps="true"
-                        android:textColor="#ffffff"
+                        android:textColor="#151D3B"
                         android:textSize="15dp" />
 
                     <EditText
@@ -76,7 +76,7 @@
                         android:fontFamily="sans-serif-light"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:textColor="#ffffff"
+                        android:textColor="#151D3B"
                         android:textSize="15dp" />
 
                 </LinearLayout>
@@ -94,7 +94,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="Password"
                         android:textAllCaps="true"
-                        android:textColor="#ffffff"
+                        android:textColor="#151D3B"
                         android:textSize="15dp" />
 
                     <EditText
@@ -108,7 +108,7 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-                        android:textColor="#ffffff"
+                        android:textColor="#151D3B"
                         android:textSize="15dp"
                         android:visibility="visible" />
 
@@ -131,8 +131,7 @@
                 android:paddingLeft="50dp"
                 android:paddingRight="50dp"
                 android:text="Sign In"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
+                android:textColor="#151D3B"
                 android:textSize="16dp" />
 
 

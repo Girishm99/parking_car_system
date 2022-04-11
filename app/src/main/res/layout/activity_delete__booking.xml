@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".Delete_Booking">
 
     <RelativeLayout
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancel Booking"
-                android:textColor="@color/colorAccent"
+                android:textColor="#222831"
                 android:textSize="25dp" />
 
         </LinearLayout>
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Application No. :"
-                android:textColor="@color/colorAccent"
+                android:textColor="#222831"
                 android:textSize="20dp" />
 
             <EditText
@@ -64,14 +64,20 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Cancel" />
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#222831"
+                android:text="Delete"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btn_deletereset"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Reset" />
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#222831"
+                android:text="Reset"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 

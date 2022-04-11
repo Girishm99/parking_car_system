@@ -5,19 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F7F5F2"
     tools:context=".Add_Booking">
 
     <RelativeLayout
         android:id="@+id/road"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/road2"
-        android:layout_below="@+id/profile"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:background="@drawable/road2"
         android:orientation="vertical">
 
 
@@ -30,9 +30,8 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="75dp"
-            android:layout_toStartOf="@+id/btn_slot2"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 1" />
+            android:background="#E7E6E1"
+            android:text="Ghatkopar" />
 
         <Button
             android:id="@+id/btn_area2"
@@ -40,10 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:background="@color/colorPrimaryDark"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="53dp"
-            android:text="AREA 2" />
+            android:background="#E7E6E1"
+            android:text="Kamote" />
 
         <Button
             android:id="@+id/btn_area3"
@@ -54,9 +53,8 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="75dp"
-            android:layout_toStartOf="@+id/btn_slot4"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 3" />
+            android:background="#E7E6E1"
+            android:text="Sion" />
 
         <Button
             android:id="@+id/btn_area4"
@@ -64,10 +62,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_area2"
             android:layout_alignParentEnd="true"
-            android:background="@color/colorPrimaryDark"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="53dp"
-            android:text="AREA 4" />
+            android:background="#E7E6E1"
+            android:text="Matunga" />
 
         <Button
             android:id="@+id/btn_area5"
@@ -78,9 +76,8 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="75dp"
-            android:layout_toStartOf="@+id/btn_slot6"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 5" />
+            android:background="#E7E6E1"
+            android:text="Badlapur" />
 
         <Button
             android:id="@+id/btn_area6"
@@ -90,8 +87,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="53dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 6" />
+            android:background="#E7E6E1"
+            android:text="Sanpada" />
 
         <Button
             android:id="@+id/btn_area7"
@@ -102,9 +99,8 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="75dp"
-            android:layout_toStartOf="@+id/btn_slot6"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 7" />
+            android:background="#E7E6E1"
+            android:text="Seawood" />
 
         <Button
             android:id="@+id/btn_area8"
@@ -114,32 +110,9 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="53dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 8" />
+            android:background="#E7E6E1"
+            android:text="Nerul" />
 
-        <Button
-            android:id="@+id/btn_area9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_area7"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="75dp"
-            android:layout_toStartOf="@+id/btn_slot6"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 9" />
-
-        <Button
-            android:id="@+id/btn_area10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_area8"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="53dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="AREA 10" />
 
 
 

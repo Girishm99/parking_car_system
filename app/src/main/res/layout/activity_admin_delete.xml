@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".AdminDelete">
 
     <RelativeLayout
@@ -14,137 +14,182 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_centerHorizontal="true"
             android:id="@+id/lin_deltitle"
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancel Booking"
-                android:textColor="@color/colorAccent"
-                android:textSize="25dp"/>
+                android:text="Delete Booking"
+                android:textColor="#151D3B"
+                android:textSize="25dp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/lin_deltitle"
-            android:id="@+id/lin_del"
-            android:layout_marginTop="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FBF8F1"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:text="Application No. :"
-                android:textSize="20dp"/>
-
-            <EditText
-                android:id="@+id/et_admindel"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:inputType="numberDecimal"
+            <LinearLayout
+                android:id="@+id/lin_del"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_below="@+id/lin_del"
-            android:layout_marginTop="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/btn_admindelete"
-                android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:text="Cancel"/>
+                android:layout_below="@+id/lin_deltitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp">
+                android:layout_marginEnd="10dp">
 
-            <Button
-                android:id="@+id/btn_adminreset"
-                android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Application No. :"
+                    android:textColor="#222831"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/et_admindel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#222831"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Reset"/>
+                android:layout_below="@+id/lin_del"
+                android:layout_marginTop="40dp">
 
+                <Button
+                    android:id="@+id/btn_admindelete"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#222831"
+                    android:textColor="#EFF7E1"
+                    android:text="Delete"/>
+
+                <Button
+                    android:id="@+id/btn_adminreset"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#222831"
+                    android:text="Reset"
+                    android:textColor="#EFF7E1" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/reladmin"
-        android:layout_below="@+id/reluser"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reluser">
+
 
         <LinearLayout
-            android:layout_centerHorizontal="true"
             android:id="@+id/lin_feedtitle"
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
 
             <TextView
+                android:id="@+id/removeFeedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Remove Feedback"
-                android:textColor="@color/colorAccent"
-                android:textSize="25dp"/>
+                android:textColor="#151D3B"
+                android:textSize="25dp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/lin_feedtitle"
-            android:id="@+id/lin_feed"
-            android:layout_marginTop="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FBF8F1"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:text="Application No. :"
-                android:textSize="20dp"/>
-
-            <EditText
-                android:id="@+id/et_adminfeed"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:inputType="numberDecimal"
+            <LinearLayout
+                android:id="@+id/lin_feed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_below="@+id/lin_feed"
-            android:layout_marginTop="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/btn_adminfeedcan"
-                android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:text="Cancel"/>
+                android:layout_below="@+id/lin_feedtitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp">
 
-            <Button
-                android:id="@+id/btn_adminresetcan"
-                android:layout_width="150dp"
-                android:layout_marginLeft="20dp"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Application No. :"
+                    android:textColor="#222831"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/et_adminfeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="#222831" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Reset"/>
+                android:layout_below="@+id/lin_feed"
+                android:layout_marginTop="40dp">
 
+                <Button
+                    android:id="@+id/btn_adminfeedcan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#222831"
+                    android:text="Delete"
+                    android:textColor="#EFF7E1" />
+
+                <Button
+                    android:id="@+id/btn_adminresetcan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#222831"
+                    android:text="Reset"
+                    android:textColor="#EFF7E1" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

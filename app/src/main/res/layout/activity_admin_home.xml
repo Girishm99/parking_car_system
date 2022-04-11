@@ -5,50 +5,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".AdminHome">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp">
 
         <Button
             android:id="@+id/btn_adminhomeview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:text="View Booking"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="93dp"
             android:background="@drawable/btn_bg"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"/>
+            android:backgroundTint="#151D3B"
+            android:text="View Booking"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_adminhomedelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/btn_adminhomeview"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:text="Delete Booking"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="93dp"
             android:background="@drawable/btn_bg"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"/>
+            android:backgroundTint="#151D3B"
+            android:text="Delete Booking"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_adminhomefeedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_adminhomedelete"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="93dp"
             android:background="@drawable/btn_bg"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"
+            android:backgroundTint="#151D3B"
             android:text="Feedback"
             android:textColor="@color/white"
             android:textSize="25dp" />
@@ -58,12 +68,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_adminhomefeedback"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="93dp"
             android:background="@drawable/btn_bg"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"
-            android:text="VIEW MACHANIC DETAILS"
+            android:backgroundTint="#151D3B"
+            android:text="MECHANIC DETAILS"
             android:textColor="@color/white"
             android:textSize="25dp" />
 
@@ -71,15 +84,18 @@
             android:id="@+id/btn_adminhomesignout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/btn_adminhomemacdetails"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:text="SIGN OUT"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="93dp"
             android:background="@drawable/btn_bg"
-            android:backgroundTint="@color/colorAccent"
-            android:padding="15dp"/>
+            android:backgroundTint="#151D3B"
+            android:text="SIGN OUT"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
     </RelativeLayout>
 

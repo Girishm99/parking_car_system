@@ -32,6 +32,7 @@ public class View_Booking extends AppCompatActivity {
             buffer.append("Name :"+res.getString(1)+"\n");
             buffer.append("Email: :"+res.getString(2)+"\n");
             buffer.append("Car Number:"+res.getString(3)+"\n");
+            buffer.append("Address:"+res.getString(4)+"\n\n");
         }
         result.setText(buffer);
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".AdminAddMachanic">
 
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Machanic Details"
-            android:textColor="@color/colorAccent"
+            android:textColor="#222831"
             android:textSize="30dp" />
     </LinearLayout>
 
@@ -51,7 +51,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="114dp"
             android:text="Name"
-            android:textColor="@color/colorAccent"
+            android:textColor="#222831"
             android:textSize="20dp" />
 
         <EditText
@@ -73,7 +73,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="114dp"
             android:text="Mobile No."
-            android:textColor="@color/colorAccent"
+            android:textColor="#222831"
             android:textSize="20dp" />
 
         <EditText
@@ -96,7 +96,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="114dp"
             android:text="Address"
-            android:textColor="@color/colorAccent"
+            android:textColor="#222831"
             android:textSize="20dp" />
 
         <EditText
@@ -120,7 +120,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="114dp"
             android:text="Pincode"
-            android:textColor="@color/colorAccent"
+            android:textColor="#222831"
             android:textSize="20dp" />
 
         <EditText
@@ -150,7 +150,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/colorAccent"
+                android:backgroundTint="#222831"
                 android:text="Save"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
@@ -162,7 +162,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/colorAccent"
+                android:backgroundTint="#222831"
                 android:textColor="@color/white"
                 android:text="reset"
                 android:textSize="20dp" />

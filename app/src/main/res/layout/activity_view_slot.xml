@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F7F5F2"
     tools:context=".ViewSlot">
 
     <RelativeLayout
@@ -23,26 +23,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Slot Details"
-                android:textColor="@color/colorAccent"
+                android:textColor="#222831"
                 android:textSize="30dp"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_below="@+id/lin_viewtitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_viewtitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="#EEEDDE">
 
             <TextView
                 android:id="@+id/tv_viewrentdata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:inputType="none"
-                android:scrollbars="vertical"
                 android:scrollbarAlwaysDrawVerticalTrack="true"
-                android:textColor="@color/colorAccent"/>
+                android:scrollbars="vertical"
+                android:textColor="#222831"
+                android:textSize="20dp" />
 
         </LinearLayout>
 

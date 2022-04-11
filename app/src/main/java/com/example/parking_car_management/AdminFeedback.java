@@ -29,7 +29,7 @@ public class AdminFeedback extends AppCompatActivity {
         StringBuffer buffer =new StringBuffer();
         while (res.moveToNext()) {
             buffer.append("ID: "+res.getString(0)+"\n");
-            buffer.append("Feedback: "+res.getString(1)+"\n");
+            buffer.append("Feedback: "+res.getString(1)+"\n\n");
         }
         result.setText(buffer);
     }

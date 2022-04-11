@@ -13,13 +13,14 @@ import android.widget.TextView;
 public class AdminViewMacDetails extends AppCompatActivity {
 
     DataHelper mydb;
-    private TextView text;
+    private TextView text,breaktext;
     Button addDetails,deletemacDetails;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_view_mac_details);
         text= findViewById(R.id.tv_macdetails);
+        breaktext= findViewById(R.id.breakSpace);
         addDetails= findViewById(R.id.btn_addDetails);
         deletemacDetails= findViewById(R.id.btn_deleteMacDetails);
 

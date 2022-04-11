@@ -1,6 +1,7 @@
 package com.example.parking_car_management;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -28,7 +29,7 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener{
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -36,39 +37,27 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout drawer;
 
-    private Button addbook,viewbook,deletebook,feedback,viewmachanic;
-    private Button rent,viewslot;
+    private Button addbook, viewbook, deletebook, feedback, viewmachanic, findpetrolpump;
+    private Button rent, viewslot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        addbook=findViewById(R.id.btn_addbooking);
-        viewbook=findViewById(R.id.btn_viewbooking);
-        deletebook=findViewById(R.id.btn_deletebooking);
-        feedback=findViewById(R.id.btn_feedback);
-        rent=findViewById(R.id.btn_slotrent);
-        viewmachanic=findViewById(R.id.btn_viewmachanic);
-        viewslot=findViewById(R.id.btn_slotview);
+        addbook = findViewById(R.id.btn_addbooking);
+        viewbook = findViewById(R.id.btn_viewbooking);
+        deletebook = findViewById(R.id.btn_deletebooking);
+        feedback = findViewById(R.id.btn_feedback);
+        rent = findViewById(R.id.btn_slotrent);
+        viewmachanic = findViewById(R.id.btn_viewmachanic);
+        viewslot = findViewById(R.id.btn_slotview);
+        findpetrolpump = findViewById(R.id.btn_findpetrolpump);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
 
 
         addbook.setOnClickListener(this);
@@ -78,6 +67,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         viewmachanic.setOnClickListener(this);
         rent.setOnClickListener(this);
         viewslot.setOnClickListener(this);
+        findpetrolpump.setOnClickListener(this);
     }
 
     @Override
@@ -97,22 +87,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
-            case R.id.signout:{
+        switch (item.getItemId()) {
+            case R.id.signout: {
 
                 firebaseAuth.signOut();
                 finish();
-                startActivity(new Intent(this,LoginActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 break;
             }
 
-            case R.id.settings:{
-                startActivity(new Intent(this,SettingActivity.class));
+            case R.id.settings: {
+                startActivity(new Intent(this, SettingActivity.class));
                 break;
             }
 
-            case R.id.about:{
-                startActivity(new Intent(this,About.class));
+            case R.id.about: {
+                startActivity(new Intent(this, About.class));
                 break;
             }
 
@@ -124,9 +114,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_tools:
-                startActivity(new Intent(this,SettingActivity.class));
+                startActivity(new Intent(this, SettingActivity.class));
                 break;
 
             /*case R.id.nav_chat:
@@ -138,11 +128,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
 */
             case R.id.nav_share:
-                Toast.makeText(this,"share",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.nav_about:
-                startActivity(new Intent(this,About.class));
+                startActivity(new Intent(this, About.class));
                 break;
 
         }
@@ -153,34 +143,46 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void onClick(View view){
+    public void onClick(View view) {
 
-        if (view==addbook){
-            startActivity(new Intent(this,Add_Booking.class));
+        if (view == addbook) {
+            startActivity(new Intent(this, Add_Booking.class));
         }
 
-        if (view==viewbook){
-            startActivity(new Intent(this,View_Booking.class));
+        if (view == viewbook) {
+            startActivity(new Intent(this, View_Booking.class));
         }
 
-        if (view==deletebook){
-            startActivity(new Intent(this,Delete_Booking.class));
+        if (view == deletebook) {
+            startActivity(new Intent(this, Delete_Booking.class));
         }
 
-        if (view==feedback){
-            startActivity(new Intent(this,Feedback.class));
+        if (view == feedback) {
+            startActivity(new Intent(this, Feedback.class));
         }
 
-        if (view==viewmachanic){
-            startActivity(new Intent(this,viewMachanicDetails.class));
+        if (view == viewmachanic) {
+            startActivity(new Intent(this, viewMachanicDetails.class));
         }
 
-        if (view==rent){
-            startActivity(new Intent(this,RentSlot.class));
+        if (view == rent) {
+            startActivity(new Intent(this, RentSlot.class));
         }
 
-        if (view==viewslot){
-            startActivity(new Intent(this,ViewSlot.class));
+        if (view == viewslot) {
+            startActivity(new Intent(this, ViewSlot.class));
+        }
+        if (view == findpetrolpump) {
+            // Search for restaurants nearby
+            Uri gmmIntentUri = Uri.parse("geo:0,0?q=petrol pump");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+//            startActivity(new Intent(this, ViewSlot.class));
+
+
+
+
         }
     }
 }

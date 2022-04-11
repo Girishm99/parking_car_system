@@ -1,14 +1,21 @@
 package com.example.parking_car_management;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AdminAddMachanic extends AppCompatActivity {
 
@@ -41,12 +48,49 @@ public class AdminAddMachanic extends AppCompatActivity {
             }
         });
         save.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
-                add();
+                if(validateData()){
+                    add();
+
+                }
             }
         });
 
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public boolean validateData() {
+
+        String macname = macName.getText().toString().trim();
+        String mobno = macMobNo.getText().toString().trim();
+        String address = macAddress.getText().toString().trim();
+        String pincode = macPincode.getText().toString().trim();
+
+        if ((TextUtils.isEmpty(macname)) ||Objects.isNull(macname)) {
+            Toast.makeText(this, "Please enter name", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+
+        if ((TextUtils.isEmpty(mobno)) || Objects.isNull(mobno)) {
+            Toast.makeText(this, "Please enter Mobile no", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if ((TextUtils.isEmpty(address)) || Objects.isNull(address)) {
+            Toast.makeText(this, "Please enter Address", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if ((TextUtils.isEmpty(pincode)) || Objects.isNull(pincode)) {
+            Toast.makeText(this, "Please enter pincode", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
 
     }
 

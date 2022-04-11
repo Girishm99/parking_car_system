@@ -33,8 +33,6 @@ public class Add_Booking extends AppCompatActivity implements View.OnClickListen
         area6=findViewById(R.id.btn_area6);
         area7=findViewById(R.id.btn_area7);
         area8=findViewById(R.id.btn_area8);
-        area9=findViewById(R.id.btn_area9);
-        area10=findViewById(R.id.btn_area10);
 
         area1.setOnClickListener(this);
         area2.setOnClickListener(this);
@@ -44,9 +42,6 @@ public class Add_Booking extends AppCompatActivity implements View.OnClickListen
         area6.setOnClickListener(this);
         area7.setOnClickListener(this);
         area8.setOnClickListener(this);
-        area9.setOnClickListener(this);
-        area10.setOnClickListener(this);
-
 
     }
 
@@ -55,44 +50,66 @@ public class Add_Booking extends AppCompatActivity implements View.OnClickListen
     public void onClick(View view) {
 
         if (view==area1){
-            startActivity(new Intent(this,SlotActivity.class));
+
+            String value = "Ghatkopar-East";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);
         }
 
         if (view==area2){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Kamote";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area3){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Sion";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area4){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Matunga";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area5){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Badlapur";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area6){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Sanpada";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area7){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Seawood";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area8){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Nerul";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area9){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Thane";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
 
         if (view==area10){
-            startActivity(new Intent(this,SlotActivity.class));
-        }
+            String value = "Bhandup";
+            Intent intent = new Intent(this, SlotActivity.class);
+            intent.putExtra("key",value);
+            startActivity(intent);        }
     }
 }
 
